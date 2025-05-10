@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  transition: background-color 0.3s;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.list-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 15px;
+  font-size: 24px;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  background: #2196F3;
+  color: white;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.list-btn:hover {
+  background: #1976D2;
+  transform: scale(1.05);
+}
+
+.search-center {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.search-container {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+#searchInput {
+  padding: 15px 25px;
+  font-size: 18px;
+  border: 2px solid #ddd;
+  border-radius: 30px;
+  width: 80%; /* Adjust width according to your design preference */
+  max-width: 500px; /* max-width to limit search bar size */
+  outline: none;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  margin-right: 10px; /* Space between input and button */
+}
+
+#searchInput:focus {
+  border-color: #4CAF50;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.2);
+}
+
+.profile-btn {
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 16px;
+  border: none;
+  color: white;
+  background: #2196F3;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.profile-btn:hover {
+  background: #1976D2;
+}
+
+.result-container {
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+}
+
+.search-result-card {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  margin: 20px auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.search-result-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 25px rgba(0,0,0,0.2);
+}
+
+.search-result-card img {
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.search-result-info {
+  text-align: center;
+  width: 100%;
+}
+
+.search-result-info h2 {
+  margin: 0 0 15px;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.profile-btn {
+  display: inline-block;
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-size: 16px;
+  border: none;
+  color: white;
+  background: #2196F3;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.profile-btn:hover {
+  background: #1976D2;
+  transform: scale(1.05);
+}
+
+.all-people {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.person-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  background: white;
+  margin: 10px;
+  transition: transform 0.3s ease;
+  text-align: center;
+  width: 200px;
+  cursor: pointer;
+}
+
+.person-card:hover {
+  transform: translateY(-5px);
+}
+
+.person-card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+.person-card h2 {
+  font-size: 1.2rem;
+  margin: 0;
+}
